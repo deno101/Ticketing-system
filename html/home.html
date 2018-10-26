@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link type="text/css" href="../css/bootstrap.min.css">
-    <link type="text/css" href="../css/bootstrap-grid.min.css">
-    <link type="text/css" href="../css/bootstrap-reboot.min.css">
-    <script type="text/javascript" src="../js/bootstrap.min.js">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "bootstrap-grid.min.css" %}">
+    <link rel="stylesheet" href="{% static "bootstrap-reboot.min.css" %}">
+    <script type="text/javascript" src="{% static "bootstrap.min.js" %}">
     </script>
-    <script type="text/javascript" src="../js/bootstrap.bundle.min.js">
+    <script type="text/javascript" src="{% static "bootstrap.bundle.min.js" %}">
     </script>
 </head>
 <body>
-    <nav class="">
-
+    <nav class="navbar navbar-collapse navbar-light center">
+            <div class="">
+                <a class="nav-link" href="/home">Home</a>
+                <a class="nav-link" href="/booking">Booking</a>
+                <a class="nav-link" href="/support">Support</a>
+                <a class="nav-link" href="/help">Help</a>
+            </div>
     </nav>
 
 </body>
