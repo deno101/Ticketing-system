@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Ticketing.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'html'), os.path.join(BASE_DIR, 'css'), os.path.join(BASE_DIR, 'js')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,6 +120,11 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+STATICFILES_DIRS =[
+    os.path.join(BASE_DIR,'static/js'),
+    os.path.join(BASE_DIR,'static/css'),
+]
 
 
 # Static files (CSS, JavaScript, Images)
