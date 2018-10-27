@@ -17,7 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
+# Add the url and the python which contains the directing information for the url
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', views.home)
+    path('home/', views.home),
+    path('support/', views.support),
+    path('help/', views.help),
+    path('booking/', views.booking),
+    path('', views.home)
 ]
