@@ -15,4 +15,4 @@ def support(request):
 
 
 def help(request):
-    return render(request, 'help.html')
+    return render(request, 'about.html')
