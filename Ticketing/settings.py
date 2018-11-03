@@ -25,7 +25,10 @@ SECRET_KEY = 'c@$)o1ikon%(m7b(1^83v$+3^_m%!3ksct%g=rjgu%^qwdg-@b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.43.210',
+    'localhost'
+]
 
 
 # Application definition
@@ -54,7 +57,7 @@ ROOT_URLCONF = 'Ticketing.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'html'), os.path.join(BASE_DIR, 'css'), os.path.join(BASE_DIR, 'js')],
+        'DIRS': [os.path.join(BASE_DIR, 'html'), os.path.join(BASE_DIR, 'css'), os.path.join(BASE_DIR, 'js'), os.path.join(BASE_DIR, 'img')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,6 +127,7 @@ USE_TZ = True
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR,'static/js'),
     os.path.join(BASE_DIR,'static/css'),
+    os.path.join(BASE_DIR, 'static/img')
 ]
 
 
