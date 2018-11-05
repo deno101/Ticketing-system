@@ -53,6 +53,9 @@ figure {
 }
 
 #dropDown ul li {
-    padding-left: 1rem;
-    margin: 0 auto;
+    padding-right: 1rem;
+}
+
+.phone{
+    left: 50%;
 }

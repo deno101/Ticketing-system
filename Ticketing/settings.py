@@ -86,8 +86,8 @@ DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.mysql',
         'NAME': 'ticketing',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'SuperAdmin',
+        'PASSWORD': 'denniz',
         'PORT': ''
     }
 }
