@@ -19,10 +19,10 @@ from . import views
 
 # Add the url and the python which contains the directing information for the url
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('home/', views.home),
-    path('support/', views.support),
-    path('about/', views.help),
-    path('booking/', views.booking),
-    path('', views.home)
+    path(r'admin/', admin.site.urls),
+    path(r'home/', views.home, name='home'),
+    path(r'support/', views.support, name='support'),
+    path(r'about/', views.help, name='about'),
+    path(r'booking/', views.booking, name='booking'),
+    path(r'', views.home)
 ]
