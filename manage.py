@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 import os
 import sys
+import initialize
+
 
 if __name__ == '__main__':
+    initialize.App()
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Ticketing.settings')
     try:
         from django.core.management import execute_from_command_line
@@ -13,3 +16,4 @@ if __name__ == '__main__':
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
+
